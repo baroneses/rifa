@@ -131,7 +131,7 @@
                                 <ul>
                                     <li>Compre 3 leve 5 números</li>
                                 </ul>
-                                <a href="#" class="read">COMPRAR</a>
+                                <a  onclick="onBuy(11)"  class="read">COMPRAR</a>
                             </div>
                             <span class="imgHolder">
                             <img src="assets/images/icons/paypal-500x.jpg" class="img-fluid my-2 px-3 mb-3" alt="image description">
@@ -209,7 +209,7 @@
                                 <ul>
                                     <li>Compre 3 leve 5 números</li>
                                 </ul>
-                                <a href="#" class="read">COMPRAR</a>
+                                <a  onclick="onBuy(20)"  class="read">COMPRAR</a>
                             </div>
                             <span class="imgHolder">
                             <img src="assets/images/icons/paypal-500x.jpg" class="img-fluid my-2 px-3 mb-3"
@@ -908,7 +908,12 @@
     let params = window.location.search;
 
     function onBuy(e) {
-        var aux = document.querySelector('.ctrl__counter-input');
+        let aux = ''
+        if(e) {
+            aux = {value: e}
+        } else {
+            aux = document.querySelector('.ctrl__counter-input');
+        }
 
         if(params) {
             let paramsAux = '&' + 'quantity=' + aux.value;
