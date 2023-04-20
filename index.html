@@ -1,0 +1,927 @@
+<html lang="en">
+
+<head>
+    <!-- anti-flicker snippet -->
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rifa </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/fancybox.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="preload"
+          href="https://scripts.converteai.net/878e8e96-9e3c-48f1-96d9-9d726cef585a/players/62ce0c189c7b3b000b8d68cf/player.js"
+          as="script">
+    <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+    <link rel="preload"
+          href="https://images.converteai.net/878e8e96-9e3c-48f1-96d9-9d726cef585a/players/62ce0c189c7b3b000b8d68cf/thumbnail.jpg"
+          as="image">
+    <link rel="preload"
+          href="https://cdn.converteai.net/878e8e96-9e3c-48f1-96d9-9d726cef585a/62ce0af98949db000945312c/playlist.m3u8"
+          as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="assets/js/jquery.js"></script>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- FORMULARIO CSS FORMULARIO CSS FORMULARIO CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/formulario.css"/>
+    <!-- FORMULARIO CSS FORMULARIO CSS FORMULARIO CSS -->
+
+</head>
+
+
+<body class="">
+
+<div class="pageWrapper width101">
+
+    <!-- Video Player -->
+    <header class="header first-time">
+        <div style="background: linear-gradient(180deg, #000000, #262626); margin-bottom: -1px">
+            <div class="d-flex justify-content-center pt-10">
+                <img src="assets/images/logos/v6White.png" style="min-width: 150px; width: 15%" class="m-auto">
+            </div>
+
+            <div class="headline2 h2 d-block pl-2 pr-2" style="max-width: 80%; margin: auto" id="hide2">
+                <h2 style="color: white">Novo Sorteio! </h2>
+                <h2 style="color: red;"><strong>Encerra em 5 dias</strong></h2>
+            </div>
+            <div class="w-100 d-flex align-items-center justify-content-center">
+                <img style="max-width: 100%; margin-top: 0px" src="assets/images/section-header-sep.png" alt="Welcome">
+            </div>
+            <div class="col-md-12 d-flex justify-content-center">
+                <div class="col-md-8 d-flex justify-content-center">
+                    <div class="text-date">
+                        <div class="pulsate mr-2 font-weight-bold">
+                            <span  id="viewers">300</span>
+                        </div>
+                        <span style="color:white;">Pessoas estão assistindo à esse vídeo. Devido a alta demanda de acessos, garantimos a apresentação somente até:
+
+                    <strong id="date">30/09/2022</strong>
+                    </span>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div style="background: linear-gradient(180deg, #262626, transparent); padding-top: 30px; padding-bottom: 60px;">
+            <div class="video-wrapper">
+                <section class=""
+                         style="position: relative;    margin-left: auto;    margin-right: auto;   float: none;height: fit-content;">
+                    <div class="video-container box">
+                        <!-- VTURB -->
+                        <div class="bordavideo">
+                            <div id="vid_6405219b2b2cc8000b513bae" style="position:relative;width:100%;padding: 56.25% 0 0;">
+                                <img id="thumb_6405219b2b2cc8000b513bae" src="https://images.converteai.net/878e8e96-9e3c-48f1-96d9-9d726cef585a/players/6405219b2b2cc8000b513bae/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+                                <div id="backdrop_6405219b2b2cc8000b513bae" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div>
+                            </div>
+                            <script type="text/javascript" id="scr_6405219b2b2cc8000b513bae">var s=document.createElement("script");s.src="https://scripts.converteai.net/878e8e96-9e3c-48f1-96d9-9d726cef585a/players/6405219b2b2cc8000b513bae/player.js",s.async=!0,document.head.appendChild(s);</script>
+                            <!-- VTURB -->
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+    </header>
+    <div class="d-flex mb-10" style="width: 100%; max-height: 500px; opacity: 0.1">
+        <img src="assets/images/logos/v6.png" style="max-height: 500px; object-fit: contain"  class="m-auto w-100">
+    </div>
+    <!-- Video Player END-->
+    <div class="show-on-call-action" style="display: none; position: relative;">
+
+        <div  style="border-top: 3px solid black; padding-top: 21px; background-color: #fafafa; padding-bottom: 50px; " >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-8">
+                        <div class="pricingTable10">
+                            <div class="pricingTable-header">
+                                <h3 class="heading">Vai que é sua</h3>
+                                <div class="mb-1 mt-5"></div>
+                                <span class="price-value">
+                                <span class="currency">R$</span> 9,90
+                            </span>
+                            </div>
+                            <span class="imgHolder full-width">
+                            <img src="assets/images/ticket2.png" class="img-fluid full-width" alt="image description">
+                        </span>
+
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>Compre 3 leve 5 números</li>
+                                </ul>
+                                <a href="#" class="read">COMPRAR</a>
+                            </div>
+                            <span class="imgHolder">
+                            <img src="assets/images/icons/paypal-500x.jpg" class="img-fluid my-2 px-3 mb-3" alt="image description">
+                        </span>
+
+                            <h4 class="h5 text-capitalize mt-2">TOTAL:
+                                <cut class="cut">R$ 1.145,00</cut>
+                                R$359,90
+                            </h4>
+                            <span>
+                            <p class="black"><b>FRETE:&nbsp;<span style="color: rgba(204, 0, 0, 0.8);">GRÁTIS</span></b></p>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        <div class="pricingTable10" style="box-shadow: 1px 2px 7px 4px #eeeeee;">
+                            <div class="pricingTable-header" style="background-color: black">
+                                <h3 class="heading text-white">Vamo que vamo</h3>
+                                <div class="mb-1 mt-5"></div>
+
+                                <span class="price-value" style="color: white">
+                            <span class="currency">R$</span>
+                            <span class="card-price">9,90</span>
+                        </span>
+                            </div>
+                            <span class="imgHolder full-width">
+                        <img src="assets/images/ticket_neon.png" class="img-fluid full-width"
+                             alt="image description">
+                    </span>
+
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>Compre 3 leve 5 números</li>
+                                </ul>
+                                <a style="color: black;background: linear-gradient(45deg, #ffde5a, #ffde5a)" onclick="onBuy()" class="read buttonToClick">COMPRAR AGORA!</a>
+                            </div>
+                            <span class="imgHolder">
+                        <img src="assets/images/icons/paypal-500x.jpg" class="img-fluid my-2 px-3 mb-3"
+                             alt="image description">
+                    </span>
+
+                            <h4 class="h5 text-capitalize mt-2">TOTAL:
+                                <cut class="cut">R$ 1.145,00</cut>
+                                R$359,90
+                            </h4>
+                            <span>
+                        <p class="black"><b>FRETE:&nbsp;<span style="color: rgba(204, 0, 0, 0.8);">GRÁTIS</span></b></p>
+                    </span>
+                            <div class="ctrl m-auto">
+                                <div class="ctrl__button ctrl__button--decrement">–</div>
+                                <div class="ctrl__counter">
+                                    <input class="ctrl__counter-input" maxlength="10" type="text" value="1">
+                                    <div class="ctrl__counter-num">1</div>
+                                </div>
+                                <div class="ctrl__button ctrl__button--increment">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        <div class="pricingTable10">
+                            <div class="pricingTable-header">
+                                <h3 class="heading">Com esse vai</h3>
+                                <div class="mb-1 mt-5"></div>
+
+                                <span class="price-value">
+                                <span class="currency">R$</span> 69,90
+                            </span>
+                            </div>
+                            <span class="imgHolder full-width">
+                            <img src="assets/images/ticket1.png" class="img-fluid full-width"
+                                 alt="image description">
+                        </span>
+
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>Compre 3 leve 5 números</li>
+                                </ul>
+                                <a href="#" class="read">COMPRAR</a>
+                            </div>
+                            <span class="imgHolder">
+                            <img src="assets/images/icons/paypal-500x.jpg" class="img-fluid my-2 px-3 mb-3"
+                                 alt="image description">
+                        </span>
+
+                            <h4 class="h5 text-capitalize mt-2">TOTAL:
+                                <cut class="cut">R$ 1.145,00</cut>R$359,90
+                            </h4>
+                            <span>
+                            <p class="black"><b>FRETE:&nbsp;<span
+                                    style="color: rgba(204, 0, 0, 0.8);">GRÁTIS</span></b></p>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------ -->
+        <!-- -------------- TESTEMUNHAS  ---------------->
+        <!-- ------------------------------------------ -->
+
+        <div class="d-flex row align-items-center container no-padding m-auto" style="margin-top: 150px !important;">
+            <div class="col-12 col-lg-6 img-block">
+                <h2 style="color: #ececec; font-size: 140px; font-family: sans-serif">LP-640</h2>
+                <img style="max-width: 100%; margin-top: -50px" src="assets/images/carro3.png" alt="Welcome">
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="padding-100"></div>
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h3 class="text-center black font-weight-bold pb-2">GARANTIA DE 100% DE
+                        SATISFAÇÃO</h3>
+                    <div class="w-100 d-flex align-items-center justify-content-center">
+                        <img style="max-width: 100%; margin-top: -50px" src="assets/images/section-header-sep.png" alt="Welcome">
+                    </div>
+
+                    <p>O ProstaSlim é blindado por uma
+                        <b>garantia de reembolso
+                            de
+                            100%</b> de 60 dias completos a partir da sua compra. Se você não
+                        estiver totalmente satisfeito com o produto, seus resultados ou
+                        sua experiência nos primeiros 60 dias, basta nos informar enviando um e-mail
+                        para suporte@ProstaSlim.com e nós lhe daremos um <b>reembolso total
+                            dentro de 48 horas</b> do valor total. É isso mesmo, basta
+                        devolver o produto, mesmo com os potes vazios, a qualquer momento dentro de 60
+                        dias da sua compra e você receberá um reembolso total, sem perguntas ou
+                        complicações.</p>
+                </div><!-- Section Header /- -->
+                <div class="padding-100"></div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------ -->
+        <!-- -------------- TERMINA TESTEMUNHAS  ---------------->
+        <!-- ------------------------------------------ -->
+
+        <section class="abtBlock py-10 mb-lg-24 mb-xl-24 mb-md-24 mt-10 position-relative " style="background: #fbfbfb" data-scroll-index="3">
+            <img src="assets/images/logos/v6.png" class="position-absolute" style="max-width: 300px; width: 25%; right: 10px; top: -143px; opacity: 0.1"/>
+            <div class="container">
+                <div class="row flex-row">
+                    <div class="col-12 col-md-6">
+                        <header class="header px-xl-1 mb-lg-5">
+                            <h3 class="">
+
+                                <strong class="h3 d-block center-text-mobile">Perguntas Frequentes</strong>
+                            </h3>
+
+                            <div class="w-100 d-flex mt-5 align-items-center justify-content-lg-start justify-content-center ">
+                                <img style="max-width: 100%;" src="assets/images/section-header-sep.png" alt="Welcome">
+                            </div>
+                        </header>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card border-0 bg-transparent">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="card-header bg-transparent" id="headingOne">
+                                        <h5 class="mb-0">
+                                            Como funciona?
+                                        </h5>
+                                    </div>
+                                </button>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                     data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <b>Definitivamente não!</b> O ProstaSlim já fez maravilhas em homens
+                                        de
+                                        40, 50, 60 e até 70 anos. Por ter sido desenvolvido com base em
+                                        conhecimentos antigos da medicina ocidental e ser aprovado em todo o mundo,
+                                        a
+                                        fórmula
+                                        do ProstaSlim é poderosa para todos os casos de inchaço da próstata, desde os
+                                        mais leves e até os mais graves.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="sticky-box">
+                            <div class="item follow">
+                                <img style="max-height: 500px;" src="assets/images/car-key.png" class="img-fluid"
+                                     alt="image description">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="cont maincont">
+
+            <span class="maincont-line1"></span>
+            <span class="maincont-line2"></span>
+
+            <!-- Product - start -->
+            <div class="prodv">
+                <div class="prodv-props">
+                    <div class="prodv-prop-wrap">
+                        <p>Fabricante</p>
+                        <p class="prodv-prop">Volkswagen</p>
+                    </div>
+                    <div class="prodv-prop-wrap">
+                        <p>Ano</p>
+                        <p class="prodv-prop">2022</p>
+                    </div>
+                    <div class="prodv-prop-wrap">
+                        <p>Displacement</p>
+                        <p class="prodv-prop">599 <span>CC</span></p>
+                    </div>
+                    <div class="prodv-prop-wrap">
+                        <p>Velocidade Máxima</p>
+                        <p class="prodv-prop">265 <span>km/h</span></p>
+                    </div>
+                    <div class="prodv-prop-wrap">
+                        <p>Média de Valor</p>
+                        <p class="prodv-prop">220.00,00 <span>R$</span></p>
+                    </div>
+                </div>
+                <div class="prodv-rating">
+                    <p></p>
+                    <p class="prod-rating">
+                        <i class="fa fa-star-o" title="5"></i><i class="fa fa-star-o" title="4"></i><i class="fa fa-star-o" title="3"></i><i class="fa fa-star-o" title="2"></i><i class="fa fa-star-o" title="1"></i>
+                    </p>
+                </div>
+                <div class="prodv-colors">
+                    <p></p>
+                    <ul>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                        <li><span ></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                    </ul>
+                </div>
+
+                <!-- Product Image -->
+                <p class="prodv-img">
+                    <img src="assets/images/carro_2.png" alt="">
+                </p>
+
+                <p class="prodv-model">JETTA TSI</p>
+
+            </div>
+            <!-- Product - end -->
+
+            <!-- Product Tabs - start -->
+            <div class="prod-tabs-wrap">
+                <ul class="prod-tabs">
+                    <li data-prodtab-num="1" id="prod-desc" class="active">
+                        <a data-prodtab="#prod-tab-1" href="#">Descrição</a>
+                    </li>
+                </ul>
+                <div class="prod-tab-cont">
+                    <p data-prodtab-num="1" class="prod-tab-mob active" data-prodtab="#prod-tab-1">Descrição</p>
+                    <div class="prod-tab prod-tab-desc" id="prod-tab-1" style="display: block;">
+                        <p>Chegou a sua chance de acelerar na estrada com um carro zero km! Nós estamos sorteando um modelo novinho em folha e você pode ser o grande vencedor. Imagine só, dirigir um veículo moderno, confortável e com todo o estilo que você merece. É a realização de um sonho, não é mesmo?
+                        </p>
+                        <p>Chegou a sua chance de acelerar na estrada com um carro zero km! Nós estamos sorteando um modelo novinho em folha e você pode ser o grande vencedor. Imagine só, dirigir um veículo moderno, confortável e com todo o estilo que você merece. É a realização de um sonho, não é mesmo?
+                        </p>
+                        <p>Chegou a sua chance de acelerar na estrada com um carro zero km! Nós estamos sorteando um modelo novinho em folha e você pode ser o grande vencedor. Imagine só, dirigir um veículo moderno, confortável e com todo o estilo que você merece. É a realização de um sonho, não é mesmo?
+                        </p>
+                    </div>
+                    <p data-prodtab-num="2" class="prod-tab-mob" data-prodtab="#prod-tab-2">Features</p>
+                    <div class="prod-tab" id="prod-tab-2" style="display: none;">
+                        <dl class="prod-tab-props">
+                            <dt>Stroke</dt>
+                            <dd>4 Stroke</dd>
+                            <dt>Max Power</dt>
+                            <dd>62kW/6000 (r/min)</dd>
+                            <dt>Cylinders</dt>
+                            <dd>2 Cylinder</dd>
+                            <dt>Max Torque</dt>
+                            <dd>101N·m/5000 (r/min)</dd>
+                            <dt>Displacement (ml)</dt>
+                            <dd>1000CC</dd>
+                        </dl>
+                    </div>
+                    <p data-prodtab-num="3" class="prod-tab-mob" data-prodtab="#prod-tab-3">Reviews</p>
+                    <div class="prod-tab prod-reviews" id="prod-tab-3" style="display: none;">
+                        <form action="#" class="prod-addreview-form" id="prod-addreview-form">
+                            <p class="prod-tab-addreview">Add Your Review</p>
+                            <p class="prod-rating">
+                                <i class="fa fa-star-o" title="5"></i><i class="fa fa-star-o" title="4"></i><i class="fa fa-star-o" title="3"></i><i class="fa fa-star-o" title="2"></i><i class="fa fa-star-o" title="1"></i>
+                            </p>
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="E-mail">
+                            <textarea placeholder="Message"></textarea>
+                            <input type="submit" value="Add Review">
+                        </form>
+                        <div class="prod-review">
+                            <h3>Douglas Harrison</h3>
+                            <p class="prod-review-rating">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                            </p>
+                            <p>Praesent libero dui, consequat nec placerat id, cursus at metus. <br>Donec semper velit eget ex ultrices, eu lacinia nunc scelerisque. <br>Ut tincidunt magna sit amet felis dictum efficitur.</p>
+                        </div>
+                        <div class="prod-review">
+                            <h3>Douglas Harrison</h3>
+                            <p class="prod-review-rating">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                            </p>
+                            <p>Praesent libero dui, consequat nec placerat id, cursus at metus. <br>Donec semper velit eget ex ultrices, eu lacinia nunc scelerisque. <br>Ut tincidunt magna sit amet felis dictum efficitur.</p>
+                        </div>
+                        <div class="prod-review">
+                            <h3>Douglas Harrison</h3>
+                            <p class="prod-review-rating">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                            </p>
+                            <p>Praesent libero dui, consequat nec placerat id, cursus at metus. <br>Donec semper velit eget ex ultrices, eu lacinia nunc scelerisque. <br>Ut tincidunt magna sit amet felis dictum efficitur.</p>
+                        </div>
+                        <div class="prod-review">
+                            <h3>Douglas Harrison</h3>
+                            <p class="prod-review-rating">
+                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                            </p>
+                            <p>Praesent libero dui, consequat nec placerat id, cursus at metus. <br>Donec semper velit eget ex ultrices, eu lacinia nunc scelerisque. <br>Ut tincidunt magna sit amet felis dictum efficitur.</p>
+                        </div>
+                        <p class="prod-review-more">
+                            <a href="#">show more</a>
+                        </p>
+                    </div>
+                    <p class="prod-tabs-addreview prod-tabs-addreview-mob">Add a review</p>
+                </div>
+            </div>
+            <!-- Product Tabs - end -->
+
+        </div>
+
+        <div class="banner-area section-border-y-axis mb-10 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 align-self-md-center order-2 order-md-1 pt-5 pt-md-0">
+                        <div class="banner-content text-center">
+
+                            <h3 class="title text-charcoal">Oferta Por Tempo Limitado</h3>
+                            <h4 class="sub-title text-primary mb-6">Os números serão disponibilizados até </h4>
+                            <div class="countdown-wrap pb-8">
+                                    <div class="countdown__item me-3">
+                                        <span class="countdown__time hours daysLeft"></span>
+                                        <span class="countdown__text daysText">dias</span>
+                                    </div>
+                                    <div class="countdown__item me-3">
+                                        <span class="countdown__time hours hoursLeft">06</span>
+                                        <span class="countdown__text hoursText">horas</span>
+                                    </div>
+                                    <div class="countdown__item me-3">
+                                        <span class="countdown__time minutes minsLeft"></span>
+                                        <span class="countdown__text minsText">min</span>
+                                    </div>
+                                    <div class="countdown__item">
+                                        <span class="countdown__time seconds secsLeft"></span>
+                                        <span class="countdown__text secsText">seg</span>
+                                    </div>
+                            </div>
+                            <div class="button-wrap pb-8 pb-md-0">
+                                <a class="btn btn-custom-size lg-size btn-primary" href="shop.html">Comprar Número agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                    <li id="carousel__slide1"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <img class="carousel__snapper" src="assets/images/carImgs/2.png"/>
+
+                        <a href="#carousel__slide4"
+                               class="carousel__prev">Go to last slide</a>
+                            <a href="#carousel__slide2"
+                               class="carousel__next">Go to next slide</a>
+
+                    </li>
+                    <li id="carousel__slide2"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <img class="carousel__snapper" src="assets/images/carImgs/4.png"/>
+
+                        <a href="#carousel__slide1"
+                           class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide3"
+                           class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide3"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <img class="carousel__snapper" src="assets/images/carImgs/3.png"/>
+
+                        <a href="#carousel__slide2"
+                           class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide4"
+                           class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide4"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <img class="carousel__snapper" src="assets/images/carImgs/1.png"/>
+
+                        <a href="#carousel__slide3"
+                           class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide1"
+                           class="carousel__next">Go to first slide</a>
+                    </li>
+                </ol>
+                <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide1"
+                               class="carousel__navigation-button">Go to slide 1</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide2"
+                               class="carousel__navigation-button">Go to slide 2</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide3"
+                               class="carousel__navigation-button">Go to slide 3</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide4"
+                               class="carousel__navigation-button">Go to slide 4</a>
+                        </li>
+                    </ol>
+                </aside>
+            </section>
+
+        </div>
+
+
+    </div>
+   <!-- <footer class="pageFooter position-relative d-flex mt-5">
+        <img src="assets/images/footer_img.jpg" class="position-absolute width-100">
+        <div class="alignCenter w-100 align-items-center d-flex">
+            <div class="container pt-14 pb-7 pb-lg-9">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="txtWrap pt-1 pr-lg-5 pr-xl-10 mb-6">
+
+                            <p id="copyright">ProstaSlim 2022 - Todos os direitos reservados.</p>
+
+                        </div>
+                        <h6 class="h5 text-capitalize mb-5 mb-sm-7 mb-lg-9">Links úteis</h6>
+                        <ul class="fLink list-unstyled mb-6">
+                            <li><a class="footer-link" target="_blank" href="/pages/contact/indexcb.php">Contato</a>
+                            </li>
+                            <li><a class="footer-link" target="_blank" href="/pages/references">Referências</a></li>
+                            <li><a class="footer-link" target="_blank" href="/pages/terms-of-service/">Termos de
+                                uso</a></li>
+                            <li><a class="footer-link" target="_blank" href="/pages/disclaimer/">Isenção de
+                                responsabilidade</a></li>
+                            <li><a class="footer-link" target="_blank" href="/pages/privacy-policy/">Políticas de
+                                Privacidade</a></li>
+                            <li><a class="footer-link" target="_blank" href="/pages/refund-policy/">Politica de
+                                reembolso</a></li>
+                            <li><a class="footer-link" target="_blank" href="/pages/shipping-policy/">Políticas de
+                                envio</a></li>
+                            <li><a class="footer-link" target="_blank" href="/pages/affiliates/">Afiliados</a></li>
+                            <li><a class="footer-link" target="_blank" href="/unsubscribe.php">Reportar Spam</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm small">
+                        <p style="border: 1px solid; padding: 12px;">As declarações neste site não foram avaliadas
+                            pela ANVISA. Os produtos não se destinam a diagnosticar, tratar,
+                            curar ou prevenir qualquer doença. Se estiver grávida, amamentando, tomando medicamentos
+                            ou tiver algum problema de saúde, consulte seu médico antes de usar nossos produtos.</p>
+                        <p>As informações que fornecemos não se destinam a substituir a consulta com um profissional
+                            médico qualificado. Nós o encorajamos a informar seu médico sobre as mudanças que você
+                            faz em seu estilo de vida e discutir isso com ele(a). Para dúvidas ou preocupações sobre
+                            quaisquer condições médicas que você possa ter, entre em contato com seu médico.</p>
+                        <p>O conteúdo do site e o produto à venda são baseados na opinião do autor e são fornecidos
+                            apenas "COMO ESTÃO" e "CONFORME DISPONÍVEIS". Você deve fazer sua própria pesquisa e
+                            confirmar as informações com outras fontes ao pesquisar informações sobre problemas de
+                            saúde e sempre revisar as informações cuidadosamente com seu profissional de saúde antes
+                            de usar qualquer um dos protocolos apresentados neste site e/ou no produto vendido aqui.
+                        </p>
+                        <p>Depoimentos, estudos de caso e exemplos encontrados nesta página são resultados que nos
+                            foram encaminhados por usuários do ProstaSlim , e podem não
+                            refletir a experiência do comprador típico, podem não se aplicar a uma pessoa comum e
+                            não pretendem representar ou garantir que qualquer pessoa alcançará os mesmos resultados
+                            ou resultados semelhantes. Alguns nomes e informações de identificação pessoal neste
+                            site foram alterados para proteger a privacidade dos indivíduos.
+
+                        </p>
+                        <p>
+                        <div class="show-on-call-action" style="display: none;">
+
+                            <p>CENTRAL DE VENDAS<br>
+                                <a href="https://prostaslim.com.br/comercial/" target="_blank"> <img src="assets/images/vendas.png"
+                                                                 style="padding-left: 0 !important;"
+                                                                 class="img-fluid my-2 px-3 mb-3"> ></a>
+                                <br> Todos os dias - 24h
+                            </p>
+                            <p style="font-size:15px">AJUDA SOBRE SEU PEDIDO</p>
+                            <p>Fale conosco através do e-mail:<br>
+                                <a href="mailto:sac@sixcomercio.com.br">sac@sixcomercio.com.br</a><br>
+                            </p>
+                            <p>ou através do Whatsapp:<br>
+                                <a href="https://prostaslim.com.br/comercial/" target="_blank"> <img
+                                        src="assets/images/ajuda.png" style="padding-left: 0 !important;"
+                                        class="img-fluid my-2 px-3 mb-3"> ></a>
+                                <br> Seg &#8211; Sex: 9h &#8211; 18h | Sáb: 8h &#8211; 12h
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+    <footer class="w-100 py-4 flex-shrink-0 bg-dark position-relative mt-25">
+        <img src="assets/images/footer_img.jpg" style="opacity: 0.1; height: 100%; max-height: 100%; width: 100%; left: 0; top: 0; object-fit: cover" class="position-absolute width-100">
+
+        <div class="col-12 col-sm small d-flex ">
+            <div class="p-10">
+                <p style="border: 1px solid; padding: 12px; color: white">As declarações neste site não foram avaliadas
+                    pela ANVISA. Os produtos não se destinam a diagnosticar, tratar,
+                    curar ou prevenir qualquer doença. Se estiver grávida, amamentando, tomando medicamentos
+                    ou tiver algum problema de saúde, consulte seu médico antes de usar nossos produtos.</p>
+                <p style="color: white">As informações que fornecemos não se destinam a substituir a consulta com um profissional
+                    médico qualificado. Nós o encorajamos a informar seu médico sobre as mudanças que você
+                    faz em seu estilo de vida e discutir isso com ele(a). Para dúvidas ou preocupações sobre
+                    quaisquer condições médicas que você possa ter, entre em contato com seu médico.</p>
+                <p style="color: white">O conteúdo do site e o produto à venda são baseados na opinião do autor e são fornecidos
+                    apenas "COMO ESTÃO" e "CONFORME DISPONÍVEIS". Você deve fazer sua própria pesquisa e
+                    confirmar as informações com outras fontes ao pesquisar informações sobre problemas de
+                    saúde e sempre revisar as informações cuidadosamente com seu profissional de saúde antes
+                    de usar qualquer um dos protocolos apresentados neste site e/ou no produto vendido aqui.
+                </p>
+                <p style="color: white">Depoimentos, estudos de caso e exemplos encontrados nesta página são resultados que nos
+                    foram encaminhados por usuários do ProstaSlim , e podem não
+                    refletir a experiência do comprador típico, podem não se aplicar a uma pessoa comum e
+                    não pretendem representar ou garantir que qualquer pessoa alcançará os mesmos resultados
+                    ou resultados semelhantes. Alguns nomes e informações de identificação pessoal neste
+                    site foram alterados para proteger a privacidade dos indivíduos.
+
+                </p>
+            </div>
+        </div>
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">FB.</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <span id="back-top" class="text-center rounded-circle fa fa-angle-up"></span>
+</div>
+
+<script src="assets/js/countdown.js"></script>
+
+
+
+
+<script type="text/javascript">
+
+
+    /**
+     * TIMEOUT DISPLAY
+     */
+    var SECONDS_TO_DISPLAY = 10;
+    var CLASS_TO_DISPLAY = ".show-on-call-action";
+
+    var elsHiden = document.querySelectorAll(CLASS_TO_DISPLAY);
+    var elsHidenArr = [];
+    setTimeout(function () {
+        elsHidenArr = Array.prototype.slice.call(elsHiden);
+    }, 0);
+
+    var showEls = function () {
+        for (i = 0; i < elsHidenArr.length; i++) {
+            elsHidenArr[i].style.display = "block";
+        }
+    }
+
+    var elsDisplayed = false;
+    var startWatchVideoProgress = function () {
+
+        if (typeof smartplayer === 'undefined') {
+            setTimeout(function () {
+                startWatchVideoProgress()
+            }, 500);
+
+            return;
+        }
+
+        smartplayer.instances[0].on('timeupdate', () => {
+            if (elsDisplayed) return;
+            if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+            showEls();
+
+            elsDisplayed = true;
+            localStorage.setItem('alreadyElsDisplayed', true)
+        })
+    }
+
+    /**
+     * CHECK LOCAL STORAGE
+     */
+    var alreadyElsDisplayed = localStorage.getItem('alreadyElsDisplayed')
+    if (alreadyElsDisplayed == 'true') {
+
+        setTimeout(function () {
+            showEls();
+        }, 100);
+    } else {
+        startWatchVideoProgress()
+    }
+
+    //TEMPO DO CARREGANDO
+    setTimeout(function () {
+        $("#loadingVideo").hide();
+        $(".video-container").removeClass("video-container");
+    }, 1000);
+
+</script>
+
+<script>
+    //Back Intent
+    !function () {
+        var t;
+        try {
+            for (t = 0; 10 > t; ++t) history.pushState({}, "", "");
+            onpopstate = function (t) {
+                t.state && location.replace("https://prostaslim.com.br/frasco-extra/fb/")
+            }
+        } catch (o) {
+        }
+    }();
+</script>
+<script async="" defer="" src="js/utm-transfer.js"></script>
+<script>
+    document.getElementById("viewers").innerHTML = getUsersView();
+
+    setInterval(() => {
+        updatesUsersView();
+    }, 2500);
+
+    function getUsersView() {
+        return Math.floor(Math.random() * (Math.floor(910) - Math.ceil(690))) + Math.ceil(690);
+    }
+
+    function updatesUsersView() {
+        var currentUsers = document.getElementById("viewers").innerHTML;
+        var users = Math.floor(Math.random() * (Math.floor(40) - Math.ceil(40))) + Math.ceil(40);
+        currentUsers = parseInt(currentUsers) > 1200 ? parseInt(currentUsers) + users * user : parseInt(currentUsers) + users;
+        document.getElementById("viewers").innerHTML = currentUsers;
+    }
+</script>
+<script>
+    document.getElementById("date").innerHTML = new Date().toLocaleDateString('pt-br')
+</script>
+
+<script>
+    (function() {
+        'use strict';
+        function ctrls() {
+            var _this = this;
+            this.counter = 1;
+            this.priceReal = 9.90;
+            this.els = {
+                decrement: document.querySelector('.ctrl__button--decrement'),
+                counter: {
+                    container: document.querySelector('.ctrl__counter'),
+                    num: document.querySelector('.ctrl__counter-num'),
+                    input: document.querySelector('.ctrl__counter-input'),
+                    price: document.querySelector('.card-price')
+                },
+                increment: document.querySelector('.ctrl__button--increment')
+            };
+            this.decrement = function() {
+                var counter = _this.getCounter();
+                var nextCounter = (_this.counter > 1) ? --counter : counter;
+                _this.setCounter(nextCounter);
+            };
+            this.increment = function() {
+                var counter = _this.getCounter();
+                var nextCounter = (counter < 9999999999) ? ++counter : counter;
+                _this.setCounter(nextCounter);
+            };
+            this.getCounter = function() {
+                return _this.counter;
+            };
+            this.setCounter = function(nextCounter) {
+                _this.counter = nextCounter;
+            };
+            this.debounce = function(callback) {
+                setTimeout(callback, 100);
+            };
+            this.render = function(hideClassName, visibleClassName) {
+                _this.els.counter.num.classList.add(hideClassName);
+                setTimeout(function() {
+                    var f2 = (_this.getCounter() * _this.priceReal).toLocaleString('pt-br', {minimumFractionDigits: 2});
+
+                    _this.els.counter.num.innerText = _this.getCounter();
+                    _this.els.counter.input.value = _this.getCounter();
+                    _this.els.counter.price.innerText = f2;
+                    _this.els.counter.num.classList.add(visibleClassName);
+                }, 100);
+                setTimeout(function() {
+                    _this.els.counter.num.classList.remove(hideClassName);
+                    _this.els.counter.num.classList.remove(visibleClassName);
+                }, 200);
+            };
+            this.ready = function() {
+                _this.els.decrement.addEventListener('click', function() {
+                    _this.debounce(function() {
+                        _this.decrement();
+                        _this.render('is-decrement-hide', 'is-decrement-visible');
+                    });
+                });
+                _this.els.increment.addEventListener('click', function() {
+                    _this.debounce(function() {
+                        _this.increment();
+                        _this.render('is-increment-hide', 'is-increment-visible');
+                    });
+                });
+                _this.els.counter.input.addEventListener('input', function(e) {
+                    var parseValue = parseInt(e.target.value);
+                    if (!isNaN(parseValue) && parseValue >= 0) {
+                        _this.setCounter(parseValue);
+                        _this.render();
+                    }
+                });
+                _this.els.counter.input.addEventListener('focus', function(e) {
+                    _this.els.counter.container.classList.add('is-input');
+                });
+                _this.els.counter.input.addEventListener('blur', function(e) {
+                    _this.els.counter.container.classList.remove('is-input');
+                    _this.render();
+                });
+            };
+        };
+        // init
+        var controls = new ctrls();
+        document.addEventListener('DOMContentLoaded', controls.ready);
+    })();
+</script>
+
+<script>
+    let params = window.location.search;
+
+    function onBuy(e) {
+        var aux = document.querySelector('.ctrl__counter-input');
+
+        if(params) {
+            let paramsAux = '&' + 'quantity=' + aux.value;
+            params += paramsAux;
+        } else {
+            let paramsAux = '?' + 'quantity=' + aux.value;
+            params += paramsAux;
+        }
+
+        window.open('https://checkout.payt.com.br/dba4c1a117472f6aca95211285d0587e' + params,'_blank');
+
+    }
+</script>
+</body>
+
+</html>
