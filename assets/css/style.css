@@ -536,13 +536,6 @@ body {
   padding: 20px 40px 20px 40px;
 }
 
-.btn-primary {
-  color: #fff;
-  /* background-color: #0093A1; */
-  /* border-color: #0093A1; */
-  background-color: #fc4d4a;
-  border-color: #fc4d4a;
-}
 
 /*------------------------------------------------------------------
 19. abtBlock / .abtBlock
@@ -5194,9 +5187,9 @@ section, footer {
 .pricingTable10 .pricing-content ul:after{right:44px}
 .pricingTable10 .pricing-content ul li{font-size:15px;font-weight:700;color:#777473;padding:10px 0;border-bottom:1px solid #d9d9d8}
 .pricingTable10 .pricing-content ul li:last-child{border-bottom:none}
-.pricingTable10 .read{display:inline-block;border-radius: 2px; font-weight: bold; font-size:16px;color:#fff;text-transform:uppercase;background:#d9d9d8;padding:8px 25px;margin:30px 0;transition:all .3s ease 0s}
+.pricingTable10 .read{display:inline-block;border-radius: 2px; font-weight: bold; font-size:16px;color:#fff;text-transform:uppercase;background:black;padding:8px 25px;margin:30px 0;transition:all .3s ease 0s}
 .pricingTable10 .read:hover{text-decoration:none}
-.pricingTable10:hover .read{background:black}
+.pricingTable10:hover .read{background:#f4df2d; color: black}
 @media screen and (max-width:990px){.pricingTable10{margin-bottom:25px}
 }
 .pricingTable10 .active{  transform: scale(1.1)}
@@ -5226,7 +5219,7 @@ section, footer {
 .ctrl__counter {
   position: relative;
   width: 200px;
-  height: 100px;
+  height: 70px;
   color: #333C48;
   text-align: center;
   overflow: hidden;
@@ -5254,7 +5247,7 @@ section, footer {
   border: none;
   color: #333C48;
   font-size: 30px;
-  line-height: 100px;
+  line-height: 70px;
   text-align: center;
   visability: hidden;
   opacity: 0;
@@ -5264,7 +5257,7 @@ section, footer {
 
 .ctrl__button {
   width: 100px;
-  line-height: 100px;
+  line-height: 70px;
   text-align: center;
   color: white;
   cursor: pointer;
@@ -5292,7 +5285,7 @@ section, footer {
   left: 0;
   right: 0;
   bottom: 0;
-  line-height: 100px;
+  line-height: 70px;
   visability: visible;
   opacity: 1;
   -webkit-transition: opacity 100ms ease-in;
@@ -5537,7 +5530,7 @@ increment-next {  from {
   border-radius: 4px;
   background: #fff;
   z-index: 2;
-  box-shadow: inset 0 -4px 0px 0px #dfe2f0, 0 10px 20px 0px rgba(192,196,215,0.25);
+  box-shadow: inset 0 -4px 0px 0px #fec109, 0 10px 20px 0px rgba(192,196,215,0.25);
   padding: 41px 4% 13px;
 }
 .prodv:after {
@@ -5660,10 +5653,10 @@ increment-next {  from {
   -moz-transform: translate(0,-50%);
   -webkit-transform: translate(0,-50%);
   transform: translate(0, -50%);
-  font-size: 130px;
+  font-size: 110px;
   color: #d3d7e7;
   left: 0;
-  font-family: 'MontserratBlack', 'Montserrat', sans-serif;
+  font-family: sans-serif;
   overflow: hidden;
   line-height: normal !important;
 }
@@ -6163,12 +6156,12 @@ ol, li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-color: #f99;
+  background-color: black;
   counter-increment: item;
 }
 
 .carousel__slide:nth-child(even) {
-  background-color: #99f;
+  background-color: black;
 }
 
 .carousel__slide:before {
@@ -6268,11 +6261,11 @@ ol, li {
 .carousel::after {
   content: '';
   z-index: 1;
-  background-color: #333;
+  background-color: #fec109;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center center;
-  color: #fff;
+  color: black;
   font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
